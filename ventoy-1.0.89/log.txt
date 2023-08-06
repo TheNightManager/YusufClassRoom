@@ -1,0 +1,588 @@
+[2023/03/30 09:57:52] ===============================================
+[2023/03/30 09:57:52] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/03/30 09:57:52] ===============================================
+[2023/03/30 09:57:52] ventoy_disk_enumerate_all
+[2023/03/30 09:57:52] get disk info sdb
+[2023/03/30 09:57:52] is 4k native disk <sdb> <0>
+[2023/03/30 09:57:52] get disk size from sysfs for sdb
+[2023/03/30 09:57:52] ventoy_get_vtoy_data /dev/sdb
+[2023/03/30 09:57:52] Not valid ventoy partition layout [2048 30461952] [0 0]
+[2023/03/30 09:57:52] disk:</dev/sdb 8:16> model:<SanDisk Ultra (USB)> size:15597568000 (16 GB)
+[2023/03/30 09:57:52] /dev/sdb NO Ventoy detected
+[2023/03/30 09:57:52] get disk info sda
+[2023/03/30 09:57:52] is 4k native disk <sda> <0>
+[2023/03/30 09:57:52] get disk size from sysfs for sda
+[2023/03/30 09:57:52] ventoy_get_vtoy_data /dev/sda
+[2023/03/30 09:57:52] Invalid efi part2 name <>
+[2023/03/30 09:57:52] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/03/30 09:57:52] /dev/sda NO Ventoy detected
+[2023/03/30 09:57:52] ============= DISK DUMP ============
+[2023/03/30 09:57:52] /dev/sdb [16 GB] SanDisk Ultra (USB)	Ventoy: NA
+[2023/03/30 09:57:52] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/03/30 09:58:09] ventoy_disk_enumerate_all
+[2023/03/30 09:58:09] get disk info sdb
+[2023/03/30 09:58:09] is 4k native disk <sdb> <0>
+[2023/03/30 09:58:09] get disk size from sysfs for sdb
+[2023/03/30 09:58:09] ventoy_get_vtoy_data /dev/sdb
+[2023/03/30 09:58:09] Not valid ventoy partition layout [2048 30461952] [0 0]
+[2023/03/30 09:58:09] disk:</dev/sdb 8:16> model:<SanDisk Ultra (USB)> size:15597568000 (16 GB)
+[2023/03/30 09:58:09] /dev/sdb NO Ventoy detected
+[2023/03/30 09:58:09] get disk info sda
+[2023/03/30 09:58:09] is 4k native disk <sda> <0>
+[2023/03/30 09:58:09] get disk size from sysfs for sda
+[2023/03/30 09:58:09] ventoy_get_vtoy_data /dev/sda
+[2023/03/30 09:58:09] Invalid efi part2 name <>
+[2023/03/30 09:58:09] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/03/30 09:58:09] /dev/sda NO Ventoy detected
+[2023/03/30 09:58:28] ==================================================================================
+[2023/03/30 09:58:28] ===== ventoy install /dev/sdb style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2023/03/30 09:58:28] ==================================================================================
+[2023/03/30 09:58:28] /dev/sdb mounted </dev/sdb1 /media/yusuf/New\040Volume vfat rw,nosuid,nodev,relatime,uid=1001,gid=1001,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro 0 0
+>
+[2023/03/30 09:58:28] disk is mounted, now try to unmount it ...
+[2023/03/30 09:58:28] umount </dev/sdb> </media/yusuf/New Volume> [ success ]
+[2023/03/30 09:58:28] disk is not mounted now, we can do the install ...
+[2023/03/30 09:58:28] start install thread SanDisk Ultra (USB) ...
+[2023/03/30 09:58:28] ventoy_install_thread run ...
+[2023/03/30 09:58:28] check disk sdb
+[2023/03/30 09:58:28] disk is not mounted now, we can do continue ...
+[2023/03/30 09:58:28] ventoy_clean_disk fd:5 size:15597568000
+[2023/03/30 09:58:28] write disk at off:0 writelen:65536 datalen:65536
+[2023/03/30 09:58:28] write disk at off:15597502464 writelen:65536 datalen:65536
+[2023/03/30 09:58:28] read core.img.xz rc:0 len:455176
+[2023/03/30 09:58:28] ventoy_unxz_stg1_img len:455176 rc:0
+[2023/03/30 09:58:28] read disk.img.xz rc:0 len:13406604
+[2023/03/30 09:58:28] ventoy_unxz_efipart_img len:13406604 rc:0 unxzlen:33554432
+[2023/03/30 09:58:28] Fill MBR part table
+[2023/03/30 09:58:28] Disk signature: 0x7956c344
+[2023/03/30 09:58:28] no need to align with 4KB
+[2023/03/30 09:58:28] ReservedSector: 0
+[2023/03/30 09:58:28] Part1StartSector:2048 Part1SectorCount:30396416 Part2StartSector:30398464
+[2023/03/30 09:58:28] Formatting part1 exFAT /dev/sdb ...
+[0123/03/30 09:58:28] Creating... 
+[0123/03/30 09:58:28] Flushing... 
+[2023/03/30 09:58:28] Formatting part2 EFI ...
+[2023/03/30 09:58:28] Formatting part2 EFI offset:15564013568 ...
+[2023/03/30 09:58:28] VentoyProcSecureBoot 1 ...
+[2023/03/30 09:58:28] Secure boot is enabled ...
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/03/30 09:58:28] Writing legacy grub ...
+[2023/03/30 09:58:28] Write MBR stage1 ...
+[2023/03/30 09:58:28] lseek offset:512(512) writelen:1048064(1048064)
+[2023/03/30 09:58:28] fsync data1...
+[2023/03/30 09:58:31] Checking part2 efi data /dev/sdb ...
+[2023/03/30 09:58:32] efi part data check success
+[2023/03/30 09:58:32] Writting Partition Table style:0...
+[2023/03/30 09:58:32] Writting MBR Partition Table 0 512
+[2023/03/30 09:58:32] fsync data2...
+[2023/03/30 09:58:32] ====================================
+[2023/03/30 09:58:32] ====== ventoy install success ======
+[2023/03/30 09:58:32] ====================================
+[2023/03/30 09:58:32] ventoy_disk_enumerate_all
+[2023/03/30 09:58:32] get disk info sdb
+[2023/03/30 09:58:32] is 4k native disk <sdb> <0>
+[2023/03/30 09:58:32] get disk size from sysfs for sdb
+[2023/03/30 09:58:32] ventoy_get_vtoy_data /dev/sdb
+[2023/03/30 09:58:32] ventoy partition layout check OK: [2048 30396416] [30398464 65536]
+[2023/03/30 09:58:32] now check secure boot for /dev/sdb ...
+[2023/03/30 09:58:32] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2023/03/30 09:58:32] disk:</dev/sdb 8:16> model:<SanDisk Ultra (USB)> size:15597568000 (16 GB)
+[2023/03/30 09:58:32] /dev/sdb Ventoy:<1.0.89> MBR secureboot:1 preserve:0
+[2023/03/30 09:58:32] get disk info sda
+[2023/03/30 09:58:32] is 4k native disk <sda> <0>
+[2023/03/30 09:58:32] get disk size from sysfs for sda
+[2023/03/30 09:58:32] ventoy_get_vtoy_data /dev/sda
+[2023/03/30 09:58:32] Invalid efi part2 name <>
+[2023/03/30 09:58:32] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/03/30 09:58:32] /dev/sda NO Ventoy detected
+[2023/03/30 10:13:30] ventoy server exit due to signal ...
+[2023/04/03 18:18:12] ===============================================
+[2023/04/03 18:18:12] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/04/03 18:18:12] ===============================================
+[2023/04/03 18:18:12] ventoy_disk_enumerate_all
+[2023/04/03 18:18:12] get disk info sdb
+[2023/04/03 18:18:12] is 4k native disk <sdb> <0>
+[2023/04/03 18:18:12] get disk size from sysfs for sdb
+[2023/04/03 18:18:12] ventoy_get_vtoy_data /dev/sdb
+[2023/04/03 18:18:12] Not valid ventoy partition layout [2048 60123136] [0 0]
+[2023/04/03 18:18:12] disk:</dev/sdb 8:16> model:< USB  SanDisk 3.2Gen1 (USB)> size:30784094208 (32 GB)
+[2023/04/03 18:18:12] /dev/sdb NO Ventoy detected
+[2023/04/03 18:18:12] get disk info sda
+[2023/04/03 18:18:12] is 4k native disk <sda> <0>
+[2023/04/03 18:18:12] get disk size from sysfs for sda
+[2023/04/03 18:18:12] ventoy_get_vtoy_data /dev/sda
+[2023/04/03 18:18:12] Invalid efi part2 name <>
+[2023/04/03 18:18:12] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/04/03 18:18:12] /dev/sda NO Ventoy detected
+[2023/04/03 18:18:12] ============= DISK DUMP ============
+[2023/04/03 18:18:12] /dev/sdb [32 GB]  USB  SanDisk 3.2Gen1 (USB)	Ventoy: NA
+[2023/04/03 18:18:12] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/04/03 18:18:18] ventoy_disk_enumerate_all
+[2023/04/03 18:18:18] get disk info sdb
+[2023/04/03 18:18:18] is 4k native disk <sdb> <0>
+[2023/04/03 18:18:18] get disk size from sysfs for sdb
+[2023/04/03 18:18:18] ventoy_get_vtoy_data /dev/sdb
+[2023/04/03 18:18:18] Not valid ventoy partition layout [2048 60123136] [0 0]
+[2023/04/03 18:18:18] disk:</dev/sdb 8:16> model:< USB  SanDisk 3.2Gen1 (USB)> size:30784094208 (32 GB)
+[2023/04/03 18:18:18] /dev/sdb NO Ventoy detected
+[2023/04/03 18:18:18] get disk info sda
+[2023/04/03 18:18:18] is 4k native disk <sda> <0>
+[2023/04/03 18:18:18] get disk size from sysfs for sda
+[2023/04/03 18:18:18] ventoy_get_vtoy_data /dev/sda
+[2023/04/03 18:18:18] Invalid efi part2 name <>
+[2023/04/03 18:18:18] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/04/03 18:18:18] /dev/sda NO Ventoy detected
+[2023/04/03 18:18:26] ==================================================================================
+[2023/04/03 18:18:26] ===== ventoy install /dev/sdb style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2023/04/03 18:18:26] ==================================================================================
+[2023/04/03 18:18:26] disk is not mounted now, we can do the install ...
+[2023/04/03 18:18:26] start install thread  USB  SanDisk 3.2Gen1 (USB) ...
+[2023/04/03 18:18:26] ventoy_install_thread run ...
+[2023/04/03 18:18:26] check disk sdb
+[2023/04/03 18:18:26] disk is not mounted now, we can do continue ...
+[2023/04/03 18:18:26] ventoy_clean_disk fd:5 size:30784094208
+[2023/04/03 18:18:26] write disk at off:0 writelen:65536 datalen:65536
+[2023/04/03 18:18:26] write disk at off:30784028672 writelen:65536 datalen:65536
+[2023/04/03 18:18:26] read core.img.xz rc:0 len:455176
+[2023/04/03 18:18:26] ventoy_unxz_stg1_img len:455176 rc:0
+[2023/04/03 18:18:26] read disk.img.xz rc:0 len:13406604
+[2023/04/03 18:18:27] ventoy_unxz_efipart_img len:13406604 rc:0 unxzlen:33554432
+[2023/04/03 18:18:27] Fill MBR part table
+[2023/04/03 18:18:27] Disk signature: 0x348986cd
+[2023/04/03 18:18:27] no need to align with 4KB
+[2023/04/03 18:18:27] ReservedSector: 0
+[2023/04/03 18:18:27] Part1StartSector:2048 Part1SectorCount:60057600 Part2StartSector:60059648
+[2023/04/03 18:18:27] Formatting part1 exFAT /dev/sdb ...
+[0123/04/03 18:18:27] Creating... 
+[0123/04/03 18:18:27] Flushing... 
+[2023/04/03 18:18:27] Formatting part2 EFI ...
+[2023/04/03 18:18:27] Formatting part2 EFI offset:30750539776 ...
+[2023/04/03 18:18:27] VentoyProcSecureBoot 1 ...
+[2023/04/03 18:18:27] Secure boot is enabled ...
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/04/03 18:18:27] Writing legacy grub ...
+[2023/04/03 18:18:27] Write MBR stage1 ...
+[2023/04/03 18:18:27] lseek offset:512(512) writelen:1048064(1048064)
+[2023/04/03 18:18:27] fsync data1...
+[2023/04/03 18:18:28] Checking part2 efi data /dev/sdb ...
+[2023/04/03 18:18:29] efi part data check success
+[2023/04/03 18:18:29] Writting Partition Table style:0...
+[2023/04/03 18:18:29] Writting MBR Partition Table 0 512
+[2023/04/03 18:18:29] fsync data2...
+[2023/04/03 18:18:29] ====================================
+[2023/04/03 18:18:29] ====== ventoy install success ======
+[2023/04/03 18:18:29] ====================================
+[2023/04/03 18:18:29] ventoy_disk_enumerate_all
+[2023/04/03 18:18:29] get disk info sdb
+[2023/04/03 18:18:29] is 4k native disk <sdb> <0>
+[2023/04/03 18:18:29] get disk size from sysfs for sdb
+[2023/04/03 18:18:29] ventoy_get_vtoy_data /dev/sdb
+[2023/04/03 18:18:29] ventoy partition layout check OK: [2048 60057600] [60059648 65536]
+[2023/04/03 18:18:29] now check secure boot for /dev/sdb ...
+[2023/04/03 18:18:29] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2023/04/03 18:18:29] disk:</dev/sdb 8:16> model:< USB  SanDisk 3.2Gen1 (USB)> size:30784094208 (32 GB)
+[2023/04/03 18:18:29] /dev/sdb Ventoy:<1.0.89> MBR secureboot:1 preserve:0
+[2023/04/03 18:18:29] get disk info sda
+[2023/04/03 18:18:29] is 4k native disk <sda> <0>
+[2023/04/03 18:18:29] get disk size from sysfs for sda
+[2023/04/03 18:18:29] ventoy_get_vtoy_data /dev/sda
+[2023/04/03 18:18:29] Invalid efi part2 name <>
+[2023/04/03 18:18:29] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/04/03 18:18:29] /dev/sda NO Ventoy detected
+[2023/04/03 18:19:19] ventoy server exit due to signal ...
+[2023/04/31 17:05:25] ===============================================
+[2023/04/31 17:05:25] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/04/31 17:05:25] ===============================================
+[2023/04/31 17:05:25] ventoy_disk_enumerate_all
+[2023/04/31 17:05:25] get disk info sda
+[2023/04/31 17:05:25] is 4k native disk <sda> <0>
+[2023/04/31 17:05:25] get disk size from sysfs for sda
+[2023/04/31 17:05:25] ventoy_get_vtoy_data /dev/sda
+[2023/04/31 17:05:25] Invalid efi part2 name <>
+[2023/04/31 17:05:25] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/04/31 17:05:25] /dev/sda NO Ventoy detected
+[2023/04/31 17:05:25] ============= DISK DUMP ============
+[2023/04/31 17:05:25] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/04/31 17:05:36] ventoy_disk_enumerate_all
+[2023/04/31 17:05:36] get disk info sda
+[2023/04/31 17:05:36] is 4k native disk <sda> <0>
+[2023/04/31 17:05:36] get disk size from sysfs for sda
+[2023/04/31 17:05:36] ventoy_get_vtoy_data /dev/sda
+[2023/04/31 17:05:36] Invalid efi part2 name <>
+[2023/04/31 17:05:36] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/04/31 17:05:36] /dev/sda NO Ventoy detected
+[2023/04/31 17:39:44] ventoy server exit due to signal ...
+[2023/05/02 11:38:56] ===============================================
+[2023/05/02 11:38:56] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/05/02 11:38:56] ===============================================
+[2023/05/02 11:38:56] ventoy_disk_enumerate_all
+[2023/05/02 11:38:56] get disk info sda
+[2023/05/02 11:38:56] is 4k native disk <sda> <0>
+[2023/05/02 11:38:56] get disk size from sysfs for sda
+[2023/05/02 11:38:56] ventoy_get_vtoy_data /dev/sda
+[2023/05/02 11:38:56] Invalid efi part2 name <>
+[2023/05/02 11:38:56] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/05/02 11:38:56] /dev/sda NO Ventoy detected
+[2023/05/02 11:38:56] ============= DISK DUMP ============
+[2023/05/02 11:38:56] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/05/02 11:39:05] ventoy_disk_enumerate_all
+[2023/05/02 11:39:05] get disk info sdb
+[2023/05/02 11:39:05] is 4k native disk <sdb> <0>
+[2023/05/02 11:39:05] get disk size from sysfs for sdb
+[2023/05/02 11:39:05] ventoy_get_vtoy_data /dev/sdb
+[2023/05/02 11:39:05] Not valid ventoy partition layout [32 120176608] [0 0]
+[2023/05/02 11:39:05] disk:</dev/sdb 8:16> model:< USB  SanDisk 3.2Gen1 (USB)> size:61530439680 (64 GB)
+[2023/05/02 11:39:05] /dev/sdb NO Ventoy detected
+[2023/05/02 11:39:05] get disk info sda
+[2023/05/02 11:39:05] is 4k native disk <sda> <0>
+[2023/05/02 11:39:05] get disk size from sysfs for sda
+[2023/05/02 11:39:05] ventoy_get_vtoy_data /dev/sda
+[2023/05/02 11:39:05] Invalid efi part2 name <>
+[2023/05/02 11:39:05] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/05/02 11:39:05] /dev/sda NO Ventoy detected
+[2023/05/02 11:39:17] ==================================================================================
+[2023/05/02 11:39:17] ===== ventoy install /dev/sdb style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2023/05/02 11:39:17] ==================================================================================
+[2023/05/02 11:39:17] /dev/sdb mounted </dev/sdb1 /media/yusuf/667C-6715 exfat ro,nosuid,nodev,relatime,uid=1001,gid=1001,fmask=0022,dmask=0022,iocharset=utf8,errors=remount-ro 0 0
+>
+[2023/05/02 11:39:17] disk is mounted, now try to unmount it ...
+[2023/05/02 11:39:18] umount </dev/sdb> </media/yusuf/667C-6715> [ success ]
+[2023/05/02 11:39:18] disk is not mounted now, we can do the install ...
+[2023/05/02 11:39:18] failed to open /dev/sdb fd:-1 err:30
+[2023/05/02 17:36:19] ventoy server exit due to signal ...
+[2023/06/27 15:27:35] ===============================================
+[2023/06/27 15:27:35] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/06/27 15:27:35] ===============================================
+[2023/06/27 15:27:35] ventoy_disk_enumerate_all
+[2023/06/27 15:27:35] get disk info sda
+[2023/06/27 15:27:35] is 4k native disk <sda> <0>
+[2023/06/27 15:27:35] get disk size from sysfs for sda
+[2023/06/27 15:27:35] ventoy_get_vtoy_data /dev/sda
+[2023/06/27 15:27:35] Invalid efi part2 name <>
+[2023/06/27 15:27:35] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/06/27 15:27:35] /dev/sda NO Ventoy detected
+[2023/06/27 15:27:35] ============= DISK DUMP ============
+[2023/06/27 15:27:35] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/06/27 15:27:42] ventoy server exit due to signal ...
+[2023/06/27 15:27:45] ===============================================
+[2023/06/27 15:27:45] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/06/27 15:27:45] ===============================================
+[2023/06/27 15:27:45] ventoy_disk_enumerate_all
+[2023/06/27 15:27:45] get disk info sda
+[2023/06/27 15:27:45] is 4k native disk <sda> <0>
+[2023/06/27 15:27:45] get disk size from sysfs for sda
+[2023/06/27 15:27:45] ventoy_get_vtoy_data /dev/sda
+[2023/06/27 15:27:45] Invalid efi part2 name <>
+[2023/06/27 15:27:45] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/06/27 15:27:45] /dev/sda NO Ventoy detected
+[2023/06/27 15:27:45] ============= DISK DUMP ============
+[2023/06/27 15:27:45] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/06/27 15:27:56] ventoy_disk_enumerate_all
+[2023/06/27 15:27:56] get disk info sda
+[2023/06/27 15:27:56] is 4k native disk <sda> <0>
+[2023/06/27 15:27:56] get disk size from sysfs for sda
+[2023/06/27 15:27:56] ventoy_get_vtoy_data /dev/sda
+[2023/06/27 15:27:56] Invalid efi part2 name <>
+[2023/06/27 15:27:56] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/06/27 15:27:56] /dev/sda NO Ventoy detected
+[2023/07/01 18:15:36] ===============================================
+[2023/07/01 18:15:36] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/07/01 18:15:36] ===============================================
+[2023/07/01 18:15:36] ventoy_disk_enumerate_all
+[2023/07/01 18:15:36] get disk info sdb
+[2023/07/01 18:15:36] is 4k native disk <sdb> <0>
+[2023/07/01 18:15:36] get disk size from sysfs for sdb
+[2023/07/01 18:15:36] ventoy_get_vtoy_data /dev/sdb
+[2023/07/01 18:15:36] Not valid ventoy partition layout [65535 234353160] [0 0]
+[2023/07/01 18:15:36] disk:</dev/sdb 8:16> model:<StoreJet Transcend (USB)> size:120034123776 (120 GB)
+[2023/07/01 18:15:36] /dev/sdb NO Ventoy detected
+[2023/07/01 18:15:36] get disk info sda
+[2023/07/01 18:15:36] is 4k native disk <sda> <0>
+[2023/07/01 18:15:36] get disk size from sysfs for sda
+[2023/07/01 18:15:36] ventoy_get_vtoy_data /dev/sda
+[2023/07/01 18:15:36] Invalid efi part2 name <>
+[2023/07/01 18:15:36] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/07/01 18:15:36] /dev/sda NO Ventoy detected
+[2023/07/01 18:15:36] ============= DISK DUMP ============
+[2023/07/01 18:15:36] /dev/sdb [120 GB] StoreJet Transcend (USB)	Ventoy: NA
+[2023/07/01 18:15:36] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/07/01 18:15:46] ventoy server exit due to signal ...
+[2023/07/01 18:16:16] ===============================================
+[2023/07/01 18:16:16] ===== Ventoy2Disk 1.0.89 127.0.0.1:24680 =====
+[2023/07/01 18:16:16] ===============================================
+[2023/07/01 18:16:16] ventoy_disk_enumerate_all
+[2023/07/01 18:16:16] get disk info sdb
+[2023/07/01 18:16:16] is 4k native disk <sdb> <0>
+[2023/07/01 18:16:16] get disk size from sysfs for sdb
+[2023/07/01 18:16:16] ventoy_get_vtoy_data /dev/sdb
+[2023/07/01 18:16:16] Not valid ventoy partition layout [65535 234353160] [0 0]
+[2023/07/01 18:16:16] disk:</dev/sdb 8:16> model:<StoreJet Transcend (USB)> size:120034123776 (120 GB)
+[2023/07/01 18:16:16] /dev/sdb NO Ventoy detected
+[2023/07/01 18:16:16] get disk info sda
+[2023/07/01 18:16:16] is 4k native disk <sda> <0>
+[2023/07/01 18:16:16] get disk size from sysfs for sda
+[2023/07/01 18:16:16] ventoy_get_vtoy_data /dev/sda
+[2023/07/01 18:16:16] Invalid efi part2 name <>
+[2023/07/01 18:16:16] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/07/01 18:16:16] /dev/sda NO Ventoy detected
+[2023/07/01 18:16:16] ============= DISK DUMP ============
+[2023/07/01 18:16:16] /dev/sdb [120 GB] StoreJet Transcend (USB)	Ventoy: NA
+[2023/07/01 18:16:16] /dev/sda [120 GB] ATA BIOSTAR S100-120 (scsi)	Ventoy: NA
+[2023/07/01 18:16:24] ventoy_disk_enumerate_all
+[2023/07/01 18:16:24] get disk info sdb
+[2023/07/01 18:16:24] is 4k native disk <sdb> <0>
+[2023/07/01 18:16:24] get disk size from sysfs for sdb
+[2023/07/01 18:16:24] ventoy_get_vtoy_data /dev/sdb
+[2023/07/01 18:16:24] Not valid ventoy partition layout [65535 234353160] [0 0]
+[2023/07/01 18:16:24] disk:</dev/sdb 8:16> model:<StoreJet Transcend (USB)> size:120034123776 (120 GB)
+[2023/07/01 18:16:24] /dev/sdb NO Ventoy detected
+[2023/07/01 18:16:24] get disk info sda
+[2023/07/01 18:16:24] is 4k native disk <sda> <0>
+[2023/07/01 18:16:24] get disk size from sysfs for sda
+[2023/07/01 18:16:24] ventoy_get_vtoy_data /dev/sda
+[2023/07/01 18:16:24] Invalid efi part2 name <>
+[2023/07/01 18:16:24] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/07/01 18:16:24] /dev/sda NO Ventoy detected
+[2023/07/01 18:16:31] ==================================================================================
+[2023/07/01 18:16:31] ===== ventoy install /dev/sdb style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2023/07/01 18:16:31] ==================================================================================
+[2023/07/01 18:16:31] /dev/sdb mounted </dev/sdb1 /media/yusuf/New\040Disk fuseblk rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096 0 0
+>
+[2023/07/01 18:16:31] disk is mounted, now try to unmount it ...
+[2023/07/01 18:16:31] umount </dev/sdb> </media/yusuf/New Disk> [ success ]
+[2023/07/01 18:16:31] disk is not mounted now, we can do the install ...
+[2023/07/01 18:16:31] start install thread StoreJet Transcend (USB) ...
+[2023/07/01 18:16:31] ventoy_install_thread run ...
+[2023/07/01 18:16:31] check disk sdb
+[2023/07/01 18:16:31] disk is not mounted now, we can do continue ...
+[2023/07/01 18:16:31] ventoy_clean_disk fd:5 size:120034123776
+[2023/07/01 18:16:31] write disk at off:0 writelen:65536 datalen:65536
+[2023/07/01 18:16:31] write disk at off:120034058240 writelen:65536 datalen:65536
+[2023/07/01 18:16:31] read core.img.xz rc:0 len:455176
+[2023/07/01 18:16:31] ventoy_unxz_stg1_img len:455176 rc:0
+[2023/07/01 18:16:31] read disk.img.xz rc:0 len:13406604
+[2023/07/01 18:16:32] ventoy_unxz_efipart_img len:13406604 rc:0 unxzlen:33554432
+[2023/07/01 18:16:32] Fill MBR part table
+[2023/07/01 18:16:32] Disk signature: 0xa4417c39
+[2023/07/01 18:16:32] no need to align with 4KB
+[2023/07/01 18:16:32] ReservedSector: 0
+[2023/07/01 18:16:32] Part1StartSector:2048 Part1SectorCount:234374064 Part2StartSector:234376112
+[2023/07/01 18:16:32] Formatting part1 exFAT /dev/sdb ...
+[0123/07/01 18:16:32] Creating... 
+[0123/07/01 18:16:32] Flushing... 
+[2023/07/01 18:16:32] Formatting part2 EFI ...
+[2023/07/01 18:16:32] Formatting part2 EFI offset:120000569344 ...
+[2023/07/01 18:16:32] VentoyProcSecureBoot 1 ...
+[2023/07/01 18:16:32] Secure boot is enabled ...
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:16:32] Writing legacy grub ...
+[2023/07/01 18:16:32] Write MBR stage1 ...
+[2023/07/01 18:16:32] lseek offset:512(512) writelen:1048064(1048064)
+[2023/07/01 18:16:32] fsync data1...
+[2023/07/01 18:16:33] Checking part2 efi data /dev/sdb ...
+[2023/07/01 18:16:34] efi part data check success
+[2023/07/01 18:16:34] Writting Partition Table style:0...
+[2023/07/01 18:16:34] Writting MBR Partition Table 0 512
+[2023/07/01 18:16:34] fsync data2...
+[2023/07/01 18:16:34] ====================================
+[2023/07/01 18:16:34] ====== ventoy install success ======
+[2023/07/01 18:16:34] ====================================
+[2023/07/01 18:16:34] ventoy_disk_enumerate_all
+[2023/07/01 18:16:34] get disk info sdb
+[2023/07/01 18:16:34] is 4k native disk <sdb> <0>
+[2023/07/01 18:16:34] get disk size from sysfs for sdb
+[2023/07/01 18:16:34] ventoy_get_vtoy_data /dev/sdb
+[2023/07/01 18:16:34] ventoy partition layout check OK: [2048 234374064] [234376112 65536]
+[2023/07/01 18:16:34] now check secure boot for /dev/sdb ...
+[2023/07/01 18:16:34] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2023/07/01 18:16:34] disk:</dev/sdb 8:16> model:<StoreJet Transcend (USB)> size:120034123776 (120 GB)
+[2023/07/01 18:16:34] /dev/sdb Ventoy:<1.0.89> MBR secureboot:1 preserve:0
+[2023/07/01 18:16:34] get disk info sda
+[2023/07/01 18:16:34] is 4k native disk <sda> <0>
+[2023/07/01 18:16:34] get disk size from sysfs for sda
+[2023/07/01 18:16:34] ventoy_get_vtoy_data /dev/sda
+[2023/07/01 18:16:34] Invalid efi part2 name <>
+[2023/07/01 18:16:34] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/07/01 18:16:34] /dev/sda NO Ventoy detected
+[2023/07/01 18:18:26] ==================================================================================
+[2023/07/01 18:18:26] ===== ventoy install /dev/sdb style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2023/07/01 18:18:26] ==================================================================================
+[2023/07/01 18:18:26] disk is not mounted now, we can do the install ...
+[2023/07/01 18:18:26] start install thread StoreJet Transcend (USB) ...
+[2023/07/01 18:18:26] ventoy_install_thread run ...
+[2023/07/01 18:18:26] check disk sdb
+[2023/07/01 18:18:26] disk is not mounted now, we can do continue ...
+[2023/07/01 18:18:26] ventoy_clean_disk fd:5 size:120034123776
+[2023/07/01 18:18:26] write disk at off:0 writelen:65536 datalen:65536
+[2023/07/01 18:18:26] write disk at off:120034058240 writelen:65536 datalen:65536
+[2023/07/01 18:18:26] read core.img.xz rc:0 len:455176
+[2023/07/01 18:18:26] ventoy_unxz_stg1_img len:455176 rc:0
+[2023/07/01 18:18:26] read disk.img.xz rc:0 len:13406604
+[2023/07/01 18:18:27] ventoy_unxz_efipart_img len:13406604 rc:0 unxzlen:33554432
+[2023/07/01 18:18:27] Fill MBR part table
+[2023/07/01 18:18:27] Disk signature: 0x73c07e02
+[2023/07/01 18:18:27] no need to align with 4KB
+[2023/07/01 18:18:27] ReservedSector: 0
+[2023/07/01 18:18:27] Part1StartSector:2048 Part1SectorCount:234374064 Part2StartSector:234376112
+[2023/07/01 18:18:27] Formatting part1 exFAT /dev/sdb ...
+[0123/07/01 18:18:27] Creating... 
+[0123/07/01 18:18:27] Flushing... 
+[2023/07/01 18:18:27] Formatting part2 EFI ...
+[2023/07/01 18:18:27] Formatting part2 EFI offset:120000569344 ...
+[2023/07/01 18:18:27] VentoyProcSecureBoot 1 ...
+[2023/07/01 18:18:27] Secure boot is enabled ...
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2023/07/01 18:18:27] Writing legacy grub ...
+[2023/07/01 18:18:27] Write MBR stage1 ...
+[2023/07/01 18:18:27] lseek offset:512(512) writelen:1048064(1048064)
+[2023/07/01 18:18:27] fsync data1...
+[2023/07/01 18:18:28] Checking part2 efi data /dev/sdb ...
+[2023/07/01 18:18:29] efi part data check success
+[2023/07/01 18:18:29] Writting Partition Table style:0...
+[2023/07/01 18:18:29] Writting MBR Partition Table 0 512
+[2023/07/01 18:18:29] fsync data2...
+[2023/07/01 18:18:29] ====================================
+[2023/07/01 18:18:29] ====== ventoy install success ======
+[2023/07/01 18:18:29] ====================================
+[2023/07/01 18:18:29] ventoy_disk_enumerate_all
+[2023/07/01 18:18:29] get disk info sdb
+[2023/07/01 18:18:29] is 4k native disk <sdb> <0>
+[2023/07/01 18:18:29] get disk size from sysfs for sdb
+[2023/07/01 18:18:29] ventoy_get_vtoy_data /dev/sdb
+[2023/07/01 18:18:29] ventoy partition layout check OK: [2048 234374064] [234376112 65536]
+[2023/07/01 18:18:29] now check secure boot for /dev/sdb ...
+[2023/07/01 18:18:29] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2023/07/01 18:18:29] disk:</dev/sdb 8:16> model:<StoreJet Transcend (USB)> size:120034123776 (120 GB)
+[2023/07/01 18:18:29] /dev/sdb Ventoy:<1.0.89> MBR secureboot:1 preserve:0
+[2023/07/01 18:18:29] get disk info sda
+[2023/07/01 18:18:29] is 4k native disk <sda> <0>
+[2023/07/01 18:18:29] get disk size from sysfs for sda
+[2023/07/01 18:18:29] ventoy_get_vtoy_data /dev/sda
+[2023/07/01 18:18:29] Invalid efi part2 name <>
+[2023/07/01 18:18:29] disk:</dev/sda 8:0> model:<ATA BIOSTAR S100-120 (scsi)> size:120034123776 (120 GB)
+[2023/07/01 18:18:29] /dev/sda NO Ventoy detected
+[2023/07/01 20:58:45] ventoy server exit due to signal ...

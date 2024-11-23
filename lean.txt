@@ -1,1 +1,8 @@
-hello devops 
+
+drwxr-xr-x 3 nobroker-tlt339 nobroker-tlt339 4096 Nov 21 16:31 ../
+-rw-rw-r-- 1 nobroker-tlt339 nobroker-tlt339   23 Nov 23 18:21 devops
+drwxrwxr-x 8 nobroker-tlt339 nobroker-tlt339 4096 Nov 23 18:24 .git/
+-rw-rw-r-- 1 nobroker-tlt339 nobroker-tlt339    0 Nov 23 18:21 king
+-rw-rw-r-- 1 nobroker-tlt339 nobroker-tlt339   13 Nov 23 18:25 lean.txt
+-rw-rw-r-- 1 nobroker-tlt339 nobroker-tlt339   13 Nov 23 18:21 sirsi
+drwxrwxr-x 7 nobroker-tlt339 nobroker-tlt339 4096 Nov 23 18:21 ventoy-1.0.89/hello devops 
